@@ -1,0 +1,8 @@
+@REM Termux.keystore password 123321456654
+
+del ..\..\termux-v0.79-offline-bootstraps-noroot.apk
+del termux-v0.79-offline-bootstraps-noroot.apk.idsig
+
+E:\Android\Sdk\build-tools\33.0.0\apksigner.bat sign --ks Termux.keystore termux-v0.79-offline-bootstraps-noroot.apk
+
+E:\Android\Sdk\build-tools\33.0.0\zipalign -v 4 termux-v0.79-offline-bootstraps-noroot.apk ../../termux-v0.79-offline-bootstraps-noroot.apk

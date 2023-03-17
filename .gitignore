@@ -1,0 +1,15 @@
+# CMake
+build
+lib
+
+# binary
+bootstrap-aarch64
+bootstrap-arm
+bootstrap-i686
+bootstrap-x86_64
+*.idsig
+
+# apktool
+termux-v0.79-offline-bootstraps-noroot
+apktool.bat
+apktool_2.7.0.jar
